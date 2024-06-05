@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import '../components/Navbar.css';
 /*import Artisans from '../datas/datas.json';*/
 import { Link } from "react-router-dom";
 
 
 
-const Navbar = () => {
-    /*const [menu, setMenu] = useState("Artisans");*/
-        
+
+const Navbar = ({handleChange}) => {
+    /*const [queryArtisan, setQueryArtisan] = useState("");
+    const handleChange = (event) => {
+        setQueryArtisan(event.target.value);
+    }*/
+    /*const  handleSubmit = (event) => {
+        event.preventDefault(); 
+        setQueryArtisan("");
+    };*/
+    
     return (
         <nav>
+            <form action="submit">
+                <input type="text" placeholder="Rechercher" onChange={handleChange}></input>
+                
+            </form>
             <Link to='/'>Accueil</Link>
             <Link to='/batiment'>Bâtiment</Link>
             <Link to='/fabrication'>Fabrication</Link>
