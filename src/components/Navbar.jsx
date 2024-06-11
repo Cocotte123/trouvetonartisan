@@ -1,34 +1,52 @@
 import React from "react";
 import '../components/Navbar.css';
-/*import Artisans from '../datas/datas.json';*/
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import Logo from '../images/Logo.png';
+import { FaSearch } from "react-icons/fa";
 
 
 
 const Navbar = ({handleChange}) => {
-    /*const [queryArtisan, setQueryArtisan] = useState("");
-    const handleChange = (event) => {
-        setQueryArtisan(event.target.value);
-    }*/
-    /*const  handleSubmit = (event) => {
-        event.preventDefault(); 
-        setQueryArtisan("");
-    };*/
+    const navLinkStyles = ({isActive}) => {
+        return {
+            color: 'white',
+            textDecoration: isActive ? 'underline' : 'none',
+        }
+    }
     
     return (
-        <nav>
-            <form action="submit">
-                <input type="text" placeholder="Rechercher" onChange={handleChange}></input>
-                
-            </form>
-            <Link to='/'>Accueil</Link>
-            <Link to='/batiment'>Bâtiment</Link>
-            <Link to='/fabrication'>Fabrication</Link>
-            <Link to='/services'>Services</Link>
-            <Link to='/alimentation'>Alimentation</Link>
-            
-        </nav>
+        <header  id="navbarContainer">
+                <form action="submit" id="searchContainer" class="wrapper">
+                    <input id="searchInput" type="text" onChange={handleChange}></input>
+                    <div class="icon"><FaSearch /></div>
+                    
+                </form>
+            <nav  class="navbar navbar-expand-lg">
+            <div className="container-fluid">
+               
+                <NavLink to='/' id="logo"><img src={Logo} alt="logo" /></NavLink>
+                <button class="navbar-toggler custom-toggler ml-auto " data-bs-toggle="collapse" data-bs-target="#linkContainer" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="linkContainer">
+                <ul className="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <NavLink to='/batiment' class="nav-link" style={navLinkStyles}>Bâtiment</NavLink>
+                    </li>
+                    <li class="nav-item">
+                    <NavLink to='/fabrication' class="nav-link" style={navLinkStyles}>Fabrication</NavLink>
+                    </li>
+                    <li class="nav-item">
+                    <NavLink to='/services' class="nav-link" style={navLinkStyles}>Services</NavLink>
+                    </li>
+                    <li class="nav-item">
+                    <NavLink to='/alimentation' class="nav-link" style={navLinkStyles}>Alimentation</NavLink>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
     )
 }
 

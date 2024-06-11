@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import '../components/ListeArtisans.css';
 /*import Artisans from '../datas/datas.json';*/
 import { ListeContext } from "../context/ListeContext";
