@@ -75,6 +75,28 @@ li:active {
         margin: 2px;
     }
 
+    #searchContainer {
+        right: 60px;
+        top: 80px;
+        
+    }
+
+    #searchInput[type="text"]{
+        /*border: none;*/
+        width: 40px;
+        border: black solid 2px;
+        transition: 0.2s ease-in-out;
+    }
+
+    #searchInput[type="text"]:focus{
+        transition: 0.2s ease-in-out;
+        border-right: solid #0074C7 2px;
+        border-bottom: solid #0074C7 2px;
+        border-top: white;
+        border-left: white;
+        width: 100%;
+    }
+
     
 }
 
