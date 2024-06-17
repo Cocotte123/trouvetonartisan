@@ -19,6 +19,8 @@
     width: 300px;
 }
 
+
+
 .wrapper {
     position:relative;
 }
@@ -80,23 +82,24 @@ li:active {
         top: 80px;
         
     }
+    
 
-    #searchInput[type="text"]{
+    #searchContainer input{
         /*border: none;*/
-        width: 40px;
+        width: 60px;
         border: black solid 2px;
-        transition: 0.2s ease-in-out;
+        cursor:pointer;
+        /*transition: 0.2s ease-in-out;*/
     }
 
-    #searchInput[type="text"]:focus{
-        transition: 0.2s ease-in-out;
+    #searchContainer input:hover, #searchContainer input:focus {
+        /*transition: 0.2s ease-in-out;*/
         border-right: solid #0074C7 2px;
         border-bottom: solid #0074C7 2px;
         border-top: white;
         border-left: white;
-        width: 100%;
+        width: 100px;
     }
-
     
 }
 

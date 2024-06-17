@@ -28,11 +28,13 @@
 #artisanListeCard {
     background-color: #F1F8FC;
     border:#00497C solid 2px;
+   
 }
 
 #artisanListeCard h5{
     color: #00497C;
     font-size: 40px;
+   
 }
 
 #artisanListeCard p {
@@ -47,6 +49,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    #listeArtisansPage h1 {
+        font-size: 40px;
+    }
+    
     #artisanListeCard h5 {
         font-size: 32px;
         
@@ -56,10 +62,17 @@
         font-size: 28px;
         
     }
+
+    #listeArtisanStar {
+        font-size: 28px;
+      
+    }
 }
 
 @media screen and (max-width: 500px) {
-   
+    #listeArtisansPage h1 {
+        font-size: 22px;
+    }
     #cartListeArtisansContainer {
         width: 80%;
         margin: auto;
@@ -72,6 +85,11 @@
 
     #artisanListeCard p {
         font-size: 16px;
+    }
+
+    #listeArtisanStar {
+        font-size: 25px;
+      
     }
    
 }

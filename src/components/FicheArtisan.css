@@ -1,0 +1,221 @@
+#ficheArtisanContainer {
+    width: 100%;
+    border-top: solid #82B864 4px;
+}
+
+#ficheArtisanContainer h1 {
+    font-size: 64px;
+    color: #00497C;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#ficheArtisanDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+
+#ficheArtisanDetails p {
+    color: #00497C;
+    font-size: 32px;
+}
+
+#ficheArtisanStar {
+    color: #82B864;
+    font-size: 30px;
+    
+}
+
+#ficheArtisanData {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#ficheArtisanData a {
+    font-size: 20px;
+}
+
+#ficheArtisanAbout {
+    text-align: center;
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 30px; 
+}
+
+#ficheArtisanAbout h2{
+    color: #00497C;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ficheArtisanAbout p {
+    color: #00497C;
+    font-size: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#ficheArtisanContact {
+    text-align: center;
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 30px; 
+}
+
+#ficheArtisanContact h2{
+    color: #00497C;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ficheArtisanFormContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ficheArtisanFormContact input{
+    border:#00497C solid 3px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px; 
+    height: 40px;
+}
+
+#ficheArtisanFormContact textarea{
+    border:#00497C solid 3px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px; 
+}
+
+#ficheArtisanFormContact button {
+    background-color: #00497C;
+    border: none;
+    padding: 14px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #F1F8FC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    #ficheArtisanContainer h1 {
+        font-size: 40px;
+        
+    }
+    #ficheArtisanStar {
+        font-size: 28px;
+        
+    }
+
+    #ficheArtisanData {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        
+    }
+
+    #ficheArtisanAbout h2{
+        font-size: 32px;
+        
+    }
+
+    #ficheArtisanAbout p {
+        font-size: 28px;
+       
+    }
+
+    #ficheArtisanContact h2{
+        font-size: 32px;
+        
+    }
+   
+   
+}
+
+@media screen and (max-width: 500px) {
+    #ficheArtisanContainer h1 {
+        font-size: 22px;
+        
+    }
+    #ficheArtisanStar {
+        font-size: 25px;
+        
+    }
+
+    #ficheArtisanData {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        
+    }
+
+    #ficheArtisanDetails p {
+        font-size: 16px;
+    }
+
+    #ficheArtisanData a {
+        font-size: 16px;
+    }
+
+    #ficheArtisanAbout h2{
+        font-size: 18px;
+        
+    }
+
+    #ficheArtisanAbout p {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #ficheArtisanContact h2{
+        font-size: 18px;
+        
+    }
+   
+
+    #ficheArtisanFormContact input{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    #ficheArtisanFormContact textarea{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+    #ficheArtisanFormContact button {
+        
+        padding: 10px;
+        width: 150px;
+       
+        font-size: 16px;
+        
+    }
+}

@@ -17,7 +17,7 @@ const Navbar = ({handleChange}) => {
     return (
         <header  id="navbarContainer">
                 <form action="submit" id="searchContainer" class="wrapper">
-                    <input id="searchInput" type="text" onChange={handleChange}></input>
+                    <input id="searchInput" type="text"  onChange={handleChange}></input>
                     <div class="icon"><FaSearch /></div>
                     
                 </form>
