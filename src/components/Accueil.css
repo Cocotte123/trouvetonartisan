@@ -1,0 +1,132 @@
+#accueilPage {
+    width: 100%;
+    
+}
+
+#explanationContainer {
+    border-top: solid #cd2c2e 4px;
+    border-bottom: solid #cd2c2e 4px;
+}
+
+#explanationContainer h1 {
+    font-size: 64px;
+    color: #00497C;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#artisansMoisContainer h2 {
+    font-size: 56px;
+    color: #00497C;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+#explanationText {
+    width: 90%;
+    padding-bottom: 3%;
+}
+
+#explanationText p {
+    font-size: 36px;
+    color: #00497C;
+    text-align: left;
+    padding-left: 5%;
+}
+
+#cartContainer {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 5%;
+    
+}
+
+
+#cartContainer .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+   
+    
+}
+
+#artisanCard {
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+}
+
+#artisanCard h5 {
+    color: #00497C;
+    font-size: 40px;
+    
+}
+
+#artisanCard p {
+    color: #00497C;
+    font-size: 32px;
+}    
+
+#topArtisanStar {
+    color: #cd2c2e;
+    font-size: 30px;
+  
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #explanationContainer h1 {
+        font-size: 40px;
+    }
+
+    #artisansMoisContainer h2 {
+        font-size: 36px;
+    }
+
+    #explanationText p {
+        font-size: 28px;
+    }
+
+    #artisanCard h5 {
+        font-size: 32px;
+        
+    }
+
+    #artisanCard p {
+        font-size: 28px;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #explanationContainer h1 {
+        font-size: 22px;
+    }
+
+    #artisansMoisContainer h2 {
+        font-size: 20px;
+    }
+
+    #explanationText p {
+        font-size: 16px;
+    }
+
+    #cartContainer {
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    #artisanCard h5 {
+        font-size: 18px;
+    }
+
+    #artisanCard p {
+        font-size: 16px;
+    }
+   
+}

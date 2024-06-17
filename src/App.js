@@ -6,6 +6,7 @@ import Page404 from '../src/components/Page404';
 import Navbar from '../src/components/Navbar';
 import Footer from '../src/components/Footer';
 import { useState } from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <BrowserRouter>
         <Navbar handleChange={handleChange} />
         <p>{queryArtisan}</p>
+        
         <Routes>
           <Route path='/' element={<Accueil />} />
           <Route path='/batiment' element={<ListeArtisans category="Bâtiment" queryArtisan={queryArtisan}/>} />

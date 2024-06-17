@@ -1,0 +1,95 @@
+#listeArtisansPage {
+    width: 100%;
+    border-top: solid #82B864 4px;
+}
+
+#listeArtisansPage h1 {
+    font-size: 64px;
+    color: #00497C;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#cartListeArtisansContainer {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+#cartListeArtisansContainer .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+   
+    
+}
+
+#artisanListeCard {
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+   
+}
+
+#artisanListeCard h5{
+    color: #00497C;
+    font-size: 40px;
+   
+}
+
+#artisanListeCard p {
+    color: #00497C;
+    font-size: 32px;
+}
+
+#listeArtisanStar {
+    color: #82B864;
+    font-size: 30px;
+  
+}
+
+@media screen and (max-width: 900px) {
+    #listeArtisansPage h1 {
+        font-size: 40px;
+    }
+    
+    #artisanListeCard h5 {
+        font-size: 32px;
+        
+    }
+
+    #artisanListeCard p {
+        font-size: 28px;
+        
+    }
+
+    #listeArtisanStar {
+        font-size: 28px;
+      
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #listeArtisansPage h1 {
+        font-size: 22px;
+    }
+    #cartListeArtisansContainer {
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    #artisanListeCard h5 {
+        font-size: 18px;
+    }
+
+    #artisanListeCard p {
+        font-size: 16px;
+    }
+
+    #listeArtisanStar {
+        font-size: 25px;
+      
+    }
+   
+}

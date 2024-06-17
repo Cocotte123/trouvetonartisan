@@ -1,0 +1,56 @@
+#page404 {
+    width: 100%;
+    border-top: solid #cd2c2e 4px;
+}
+
+#page404 h1 {
+    font-size: 64px;
+    color: #00497C;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#page404 img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#retour {
+    background-color: #CD2C2E;
+    border: none;
+    padding: 14px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #F1F8FC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    #page404 h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #page404 h1 {
+        font-size: 22px;
+    }
+
+    #retour {
+        width: 150px;
+        padding: 14px;
+
+        font-size: 14px;
+    
+    }
+}
