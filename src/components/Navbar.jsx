@@ -16,11 +16,18 @@ const Navbar = ({handleChange}) => {
     
     return (
         <header  id="navbarContainer">
+                <form action="submit" id="searchContainer2" class="wrapper">
+                    <input id="searchInput2" type="text"  onChange={handleChange}></input>
+                    <div class="icon"><FaSearch /></div>
+                    
+                </form>
                 <form action="submit" id="searchContainer" class="wrapper">
                     <input id="searchInput" type="text"  onChange={handleChange}></input>
                     <div class="icon"><FaSearch /></div>
                     
                 </form>
+
+
             <nav  class="navbar navbar-expand-lg">
             <div className="container-fluid">
                
