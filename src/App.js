@@ -7,7 +7,7 @@ import Navbar from '../src/components/Navbar/Navbar';
 import Footer from '../src/components/Footer/Footer';
 import { useState } from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import 'dotenv/config';
+
 
 
 
