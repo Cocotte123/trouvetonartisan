@@ -1,0 +1,93 @@
+#ficheArtisanContact {
+    text-align: center;
+    background-color: #F1F8FC;
+    border:#00497C solid 2px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 30px; 
+}
+
+#ficheArtisanContact h2{
+    color: #00497C;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ficheArtisanFormContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ficheArtisanFormContact input{
+    border:#00497C solid 3px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px; 
+    height: 40px;
+}
+
+#ficheArtisanFormContact textarea{
+    border:#00497C solid 3px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px; 
+}
+
+#ficheArtisanFormContact button {
+    background-color: #00497C;
+    border: none;
+    padding: 14px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #F1F8FC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    
+    #ficheArtisanContact h2{
+        font-size: 32px;
+        
+    }
+   
+   
+}
+
+@media screen and (max-width: 500px) {
+    #ficheArtisanContact h2{
+        font-size: 18px;
+        
+    }
+   
+
+    #ficheArtisanFormContact input{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    #ficheArtisanFormContact textarea{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+    #ficheArtisanFormContact button {
+        
+        padding: 10px;
+        width: 150px;
+       
+        font-size: 16px;
+        
+    }
+}
