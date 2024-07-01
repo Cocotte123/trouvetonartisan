@@ -67,7 +67,11 @@
 #artisanCard p {
     color: #00497C;
     font-size: 32px;
-}    
+}
+
+a:link {
+    text-decoration: none;
+}
 
 #topArtisanStar {
     color: #cd2c2e;

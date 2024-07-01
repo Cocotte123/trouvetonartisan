@@ -1,6 +1,6 @@
 import React from "react";
-import '../components/Page404.css';
-import ImagePage404 from '../images/404.jpg';
+import '../../pages/Page404/Page404.css';
+import ImagePage404 from '../../images/404.jpg';
 
 
 

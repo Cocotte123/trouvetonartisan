@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes,Route } from "react-router-dom";
-import Accueil from "./components/Accueil";
-import ListeArtisans from '../src/components/ListeArtisans';
-import FicheArtisan from '../src/components/FicheArtisan';
-import Page404 from '../src/components/Page404';
-import Navbar from '../src/components/Navbar';
-import Footer from '../src/components/Footer';
-import { useState } from "react";
+import Accueil from "../src/pages/Accueil/Accueil";
+import ListeArtisans from '../src/pages/ListeArtisans/ListeArtisans';
+import FicheArtisan from '../src/pages/FicheArtisan/FicheArtisan';
+import Page404 from '../src/pages/Page404/Page404';
+import Navbar from '../src/components/Navbar/Navbar';
+import Footer from '../src/components/Footer/Footer';
+import {useState } from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -18,14 +20,18 @@ function App() {
   const handleChange = (event) => {
         setQueryArtisan(event.target.value);
         
-    }
+    };
+  
+  
+    
+  
+   
 
 
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar handleChange={handleChange} />
-        <p>{queryArtisan}</p>
         
         <Routes>
           <Route path='/' element={<Accueil />} />

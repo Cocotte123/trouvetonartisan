@@ -1,5 +1,5 @@
 import React from "react";
-import '../components/Footer.css';
+import '../../components/Footer/Footer.css';
 import { GiPositionMarker } from "react-icons/gi";
 import { FaPhone } from "react-icons/fa";
 
@@ -25,7 +25,7 @@ const Footer = () => {
                 <p id="phoneNumberDetail">+33 (0)4 26 73 40 00</p>
                 </div>
             </div>
-            <div id="menu" class="container">
+            <div id="menu" className="container">
                 <a href="#">Mentions légales</a>
                 <a href="#">Données personnelles</a>
                 <a href="#">Accessibilité</a>
