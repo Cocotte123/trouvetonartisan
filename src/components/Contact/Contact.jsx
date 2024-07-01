@@ -22,16 +22,21 @@ const Contact = () => {
           );
           e.target.reset()
       };
-      console.log(process.env)
+      
 
     return (
             <div id="ficheArtisanContact">
                 <h2>Contact</h2>
                 <form id="ficheArtisanFormContact" ref={form} onSubmit={sendEmail}>
-                    <input type="text" placeholder="Nom" name="prospectName" required />
-                    <input type="email" placeholder="Mail" name="prospectMail" required />
-                    <input type="text" placeholder="Objet" name="prospectObject" required />
-                    <textarea name="propsectMessage" placeholder="Message" cols="30" rows="10"/>
+                    
+                    <input type="text" placeholder="Nom" name="prospectName" required pattern="[a-zA-Z]+[ ][a-zA-Z]+" maxLength={35} />
+                    <span>Champ limité à 35 lettres sans caractères spéciaux.</span>
+                    <input type="text" placeholder="Mail" name="prospectMail" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}$" />
+                    <span>Adresse mail valide</span>
+                    <input type="text" placeholder="Objet" name="prospectObject" maxLength={40} required pattern="[^-,`,$,]+" />
+                    <span>Champ limité à 40 lettres sans caractères spéciaux.</span>
+                    <textarea name="propsectMessage" placeholder="Message" cols="30" rows="5" maxLength={150}  required pattern="[^-,`,$,]+"/>
+                    <span>Champ limité à 150 lettres sans caractères spéciaux.</span>
                     <button type="submit">Envoyer</button>
                 </form>
             </div>

@@ -25,7 +25,6 @@
     border-radius: 5px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 20px; 
     height: 40px;
 }
 
@@ -34,7 +33,7 @@
     border-radius: 5px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 20px; 
+    
 }
 
 #ficheArtisanFormContact button {
@@ -51,6 +50,23 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+}
+
+#ficheArtisanFormContact span {
+    color: #00497C;
+    display: none;
+    text-align:left;
+    margin-left: 40px;
+    margin-bottom: 20px; 
+   
+}
+
+#ficheArtisanFormContact input:invalid ~ span {
+    display: block;
+}
+
+#ficheArtisanFormContact textarea:invalid ~ span {
+    display: block;
 }
 
 @media screen and (max-width: 900px) {
@@ -89,5 +105,9 @@
        
         font-size: 16px;
         
+    }
+
+    #ficheArtisanFormContact span {
+        margin-left: 10px;
     }
 }
