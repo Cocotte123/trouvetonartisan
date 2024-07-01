@@ -16,18 +16,7 @@ const Navbar = ({handleChange}) => {
     
     return (
         <header  id="navbarContainer">
-                <form action="submit" id="searchContainer2" className="wrapper">
-                    <input id="searchInput2" type="text"  onChange={handleChange}></input>
-                    <div className="icon"><FaSearch /></div>
-                    
-                </form>
-                <form action="submit" id="searchContainer" className="wrapper">
-                    <input id="searchInput" type="text"  onChange={handleChange}></input>
-                    <div className="icon"><FaSearch /></div>
-                    
-                </form>
-
-
+                
             <nav  className="navbar navbar-expand-lg">
             <div className="container-fluid">
                
@@ -53,6 +42,11 @@ const Navbar = ({handleChange}) => {
                 </div>
             </div>
             </nav>
+            <form action="submit" id="searchContainer" className="wrapper">
+                    <input id="searchInput" type="text"  onChange={handleChange} placeholder="Filtrer par nom, spécialité ou ville"></input>
+                    <div className="icon"><FaSearch /></div>
+                    
+            </form>
         </header>
     )
 }

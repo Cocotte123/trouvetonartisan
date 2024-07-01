@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Star from '../../components/Star/Star';
 import { AiTwotoneShop } from "react-icons/ai";
 import { BsGeoAlt } from "react-icons/bs";
+import Helmet from '../../components/Helmet/Helmet';
 
 const Accueil = () => {
     const topArtisans = Artisans.filter(artisan =>
@@ -35,6 +36,9 @@ const Accueil = () => {
     )
 
     return (<div id="accueilPage">
+            <Helmet
+                title="Accueil"
+            />
             <div id="explanationContainer">
                 <h1>Comment trouver mon artisan ?</h1>
                 <div id="explanationText" className='mx-auto'>
