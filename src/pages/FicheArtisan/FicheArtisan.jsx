@@ -8,6 +8,7 @@ import { BsGeoAlt } from "react-icons/bs";
 import { SiMaildotru } from "react-icons/si";
 import Contact from "../../components/Contact/Contact";
 
+
 const FicheArtisan = () => {
     const {Artisans} = useContext(ListeContext);
     const {artisanId} = useParams();
@@ -16,6 +17,7 @@ const FicheArtisan = () => {
     
     return(
         <div id="ficheArtisanContainer">
+             
             <h1>{artisan.name}</h1>
             <div id="ficheArtisanDetails">
                 <div id="ficheArtisanStar">

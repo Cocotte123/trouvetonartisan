@@ -6,6 +6,7 @@ import Star from '../../components/Star/Star';
 import { AiTwotoneShop } from "react-icons/ai";
 import { BsGeoAlt } from "react-icons/bs";
 
+
 const Accueil = () => {
     const topArtisans = Artisans.filter(artisan =>
         artisan.top === true
@@ -35,6 +36,7 @@ const Accueil = () => {
     )
 
     return (<div id="accueilPage">
+           
             <div id="explanationContainer">
                 <h1>Comment trouver mon artisan ?</h1>
                 <div id="explanationText" className='mx-auto'>

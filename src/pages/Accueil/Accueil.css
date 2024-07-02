@@ -134,3 +134,16 @@ a:link {
     }
    
 }
+
+@media screen and (max-width: 350px) {
+    #cartContainer {
+        width: 95%;
+        margin: auto;
+        
+    }
+
+    #cartContainer .cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
+}

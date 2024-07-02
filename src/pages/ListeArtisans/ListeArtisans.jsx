@@ -7,12 +7,14 @@ import { AiTwotoneShop } from "react-icons/ai";
 import { BsGeoAlt } from "react-icons/bs";
 
 
+
 const ListeArtisans = (props) => {
     const {Artisans} = useContext(ListeContext);
     
 
     return(
         <div id="listeArtisansPage">
+            
             <h1>Nos artisans en {props.category}</h1>
             <div id="cartListeArtisansContainer">
                 <div className="row">
