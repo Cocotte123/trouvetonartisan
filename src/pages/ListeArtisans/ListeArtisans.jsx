@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Star from '../../components/Star/Star';
 import { AiTwotoneShop } from "react-icons/ai";
 import { BsGeoAlt } from "react-icons/bs";
-import Helmet from "../../components/Helmet/Helmet";
+
 
 
 const ListeArtisans = (props) => {
@@ -14,9 +14,7 @@ const ListeArtisans = (props) => {
 
     return(
         <div id="listeArtisansPage">
-             <Helmet
-                title="Liste des artisans"
-            />
+            
             <h1>Nos artisans en {props.category}</h1>
             <div id="cartListeArtisansContainer">
                 <div className="row">

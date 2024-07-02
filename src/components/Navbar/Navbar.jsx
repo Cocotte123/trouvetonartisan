@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../../components/Navbar/Navbar.css';
 import { NavLink } from "react-router-dom";
 import Logo from '../../images/Logo.png';
@@ -12,8 +12,11 @@ const Navbar = ({handleChange}) => {
             color: 'white',
             textDecoration: isActive ? 'underline' : 'none',
         }
-    }
+    };
+
+    const pathName = window.location.pathname;
     
+
     return (
         <header  id="navbarContainer">
                 
@@ -42,15 +45,29 @@ const Navbar = ({handleChange}) => {
                 </div>
             </div>
             </nav>
-            <form action="submit" id="searchContainer" className="wrapper">
+            <div>
+                {pathName === "/"
+                ? ""  
+                : <form action="submit" id="searchContainer" className="wrapper">
                     <input id="searchInput" type="text"  onChange={handleChange} placeholder="Filtrer par nom, spécialité ou ville"></input>
                     <div className="icon"><FaSearch /></div>
-                    
-            </form>
+                </form>}
+            </div>
         </header>
     )
 }
 
 export default Navbar;
+
+
+/*<div>
+                {pathName === "/"
+                ? ""  
+                : <form action="submit" id="searchContainer" className="wrapper">
+                    <input id="searchInput" type="text"  onChange={handleChange} placeholder="Filtrer par nom, spécialité ou ville"></input>
+                    <div className="icon"><FaSearch /></div>
+                </form>}
+            </div>
+            */
 
             

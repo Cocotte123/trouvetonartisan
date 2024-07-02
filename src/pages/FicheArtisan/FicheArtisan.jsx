@@ -7,7 +7,7 @@ import { AiTwotoneShop } from "react-icons/ai";
 import { BsGeoAlt } from "react-icons/bs";
 import { SiMaildotru } from "react-icons/si";
 import Contact from "../../components/Contact/Contact";
-import Helmet from "../../components/Helmet/Helmet";
+
 
 const FicheArtisan = () => {
     const {Artisans} = useContext(ListeContext);
@@ -17,9 +17,7 @@ const FicheArtisan = () => {
     
     return(
         <div id="ficheArtisanContainer">
-             <Helmet
-                title="Fiche artisan"
-            />
+             
             <h1>{artisan.name}</h1>
             <div id="ficheArtisanDetails">
                 <div id="ficheArtisanStar">

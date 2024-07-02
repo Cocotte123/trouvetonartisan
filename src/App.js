@@ -10,16 +10,13 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
-
-
 function App() {
  
   const [queryArtisan, setQueryArtisan] = useState("");
  
   const handleChange = (event) => {
         setQueryArtisan(event.target.value);
-        
+
     };
   
   return (
