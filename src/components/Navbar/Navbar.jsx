@@ -15,6 +15,9 @@ const Navbar = ({handleChange}) => {
     };
 
     const pathName = window.location.pathname;
+    useEffect (()=>{
+        window.location.reload();
+    },[window.location.href])
     
 
     return (
@@ -53,6 +56,7 @@ const Navbar = ({handleChange}) => {
                     <div className="icon"><FaSearch /></div>
                 </form>}
             </div>
+            
         </header>
     )
 }
@@ -60,14 +64,5 @@ const Navbar = ({handleChange}) => {
 export default Navbar;
 
 
-/*<div>
-                {pathName === "/"
-                ? ""  
-                : <form action="submit" id="searchContainer" className="wrapper">
-                    <input id="searchInput" type="text"  onChange={handleChange} placeholder="Filtrer par nom, spécialité ou ville"></input>
-                    <div className="icon"><FaSearch /></div>
-                </form>}
-            </div>
-            */
 
             
