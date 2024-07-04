@@ -78,7 +78,7 @@ li:active {
     }
 
     li {
-        border-color:#0074C7 solid 2px;
+        border:#0074C7 solid 2px;
         padding: 8px;
         width: 100%;
         text-align: center;
@@ -125,7 +125,7 @@ li:active {
     }
 
     li {
-        border-color:#0074C7 solid 2px;
+        border:#0074C7 solid 2px;
         padding: 8px;
         width: 100%;
         text-align: center;
