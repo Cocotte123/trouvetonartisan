@@ -49,12 +49,10 @@ const Navbar = ({handleChange}) => {
             </div>
             </nav>
             <div>
-                {pathName === "/"
-                ? ""  
-                : <form action="submit" id="searchContainer" className="wrapper">
+                <form action="submit" id="searchContainer" className="wrapper">
                     <input id="searchInput" type="text"  onChange={handleChange} placeholder="Filtrer par nom, spécialité ou ville"></input>
                     <div className="icon"><FaSearch /></div>
-                </form>}
+                </form>
             </div>
             
         </header>
