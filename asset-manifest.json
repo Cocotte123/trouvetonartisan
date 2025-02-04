@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/trouvetonartisan/static/css/main.c4483a1a.css",
-    "main.js": "/trouvetonartisan/static/js/main.c84df185.js",
+    "main.js": "/trouvetonartisan/static/js/main.761ac862.js",
     "static/js/453.50503b1b.chunk.js": "/trouvetonartisan/static/js/453.50503b1b.chunk.js",
     "static/media/404.jpg": "/trouvetonartisan/static/media/404.ff40124b8ecd8871ee35.jpg",
     "static/media/GraphikCompact-Regular-Trial.otf": "/trouvetonartisan/static/media/GraphikCompact-Regular-Trial.e506ef36ecb37e1ea8c8.otf",
     "static/media/Logo.png": "/trouvetonartisan/static/media/Logo.04bb31bf1acc17621270.png",
     "index.html": "/trouvetonartisan/index.html",
     "main.c4483a1a.css.map": "/trouvetonartisan/static/css/main.c4483a1a.css.map",
-    "main.c84df185.js.map": "/trouvetonartisan/static/js/main.c84df185.js.map",
+    "main.761ac862.js.map": "/trouvetonartisan/static/js/main.761ac862.js.map",
     "453.50503b1b.chunk.js.map": "/trouvetonartisan/static/js/453.50503b1b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4483a1a.css",
-    "static/js/main.c84df185.js"
+    "static/js/main.761ac862.js"
   ]
 }
