@@ -14,10 +14,10 @@ const Navbar = ({handleChange}) => {
         }
     };
 
-    const pathName = window.location.pathname;
+    /*const pathName = window.location.pathname;
     useEffect (()=>{
         window.location.reload();
-    },[window.location.href])
+    },[window.location.href])*/
     
 
     return (
