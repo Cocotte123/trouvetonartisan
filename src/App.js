@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes,Route } from "react-router-dom";
+import { HashRouter, Routes,Route } from "react-router-dom";
 import Accueil from "../src/pages/Accueil/Accueil";
 import ListeArtisans from '../src/pages/ListeArtisans/ListeArtisans';
 import FicheArtisan from '../src/pages/FicheArtisan/FicheArtisan';
@@ -21,7 +21,7 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar handleChange={handleChange} />
         
         <Routes>
@@ -36,7 +36,7 @@ function App() {
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
